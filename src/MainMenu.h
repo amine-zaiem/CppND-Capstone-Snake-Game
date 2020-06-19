@@ -4,8 +4,8 @@
 
 #include <iostream>
 #include <functional>
-#include <GameMenu/GameMenu.h>
-#include <SFML/Graphics.hpp>
+//#include <GameMenu/GameMenu.h>
+//#include <SFML/Graphics.hpp>
 
 namespace game {
 
@@ -44,18 +44,18 @@ namespace game {
         std::map<std::string, uint32_t> scores_list;
         bool exit_is_pressed = false;
 
-        void start(sf::RenderWindow *w);
+        //void start(sf::RenderWindow *w);
     private:
 
-        gmenu::MenuItem menuItems[4];
-        gmenu::Action *action[4];
+        //gmenu::MenuItem menuItems[4];
+        //gmenu::Action *action[4];
 
-        char MenuText[4][15] = {
-            "Start",
-            "High Score",
-            "Options",
-            "Exit"
-        };
+//        char MenuText[4][15] = {
+  //          "Start",
+    //        "High Score",
+      //      "Options",
+        //    "Exit"
+        //};
     public:
         void welcoming_message();
         bool start();

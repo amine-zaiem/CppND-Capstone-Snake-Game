@@ -190,7 +190,7 @@ bool Game::Update()
         snake.speed += 0.02;
     }
 
-    if ( score % 3 == 0 && score > 1 && special_food_created == false && previous_special_food_created == false)
+    if ( score % 5 == 0 && score > 1 && special_food_created == false && previous_special_food_created == false)
     {
         startTime = std::chrono::system_clock::now();
         std::string message;
@@ -213,7 +213,7 @@ bool Game::Update()
     }
     endTime = std::chrono::system_clock::now();
     // DEbug    std::cout<<"duration : "<<std::chrono::duration_cast<std::chrono::milliseconds>( endTime - startTime ).count();
-    if ( std::chrono::duration_cast<std::chrono::milliseconds>( endTime - startTime ).count() > 12000 && special_food_created == true)
+    if ( std::chrono::duration_cast<std::chrono::milliseconds>( endTime - startTime ).count() > 10000 && special_food_created == true)
     {
 
 
